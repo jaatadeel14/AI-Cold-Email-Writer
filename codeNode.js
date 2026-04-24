@@ -10,7 +10,7 @@ try {
 }
 
 const parts = rawText.split('\n\n');
-const subject = parts[0].replace('Subject: ', '').trim();
+const subject = parts[0].replace('Subject: ', '').trim(); // future code is here
 const body = parts.slice(1).join('\n\n').trim();
 
 return {
