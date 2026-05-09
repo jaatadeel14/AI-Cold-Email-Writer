@@ -1,4 +1,6 @@
-        function toggleTheme() {
+// This is the main part of the code where everything is starting
+
+function toggleTheme() {
             const body = document.body;
             const icon = document.getElementById('themeIcon');
             if (body.classList.contains('dark')) {
