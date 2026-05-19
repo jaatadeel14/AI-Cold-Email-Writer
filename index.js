@@ -35,7 +35,7 @@ function toggleTheme() {
                 return;
             }
 
-            btn.disabled = true;
+            btn.disabled = true;                            // This is the best code line
             btnText.innerText = "Processing...";
             icon.classList.add('hidden');
             loader.classList.remove('hidden');
