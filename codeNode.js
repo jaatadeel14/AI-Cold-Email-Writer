@@ -3,10 +3,10 @@ const inputData = $input.first().json;
 let rawText = "";
 
 try {
-    rawText = inputData.output[0].content[0].text; 
+    rawText = inputData.output[0].content[0].text;    // if there is no word then this write no words can found in subject before the line
 } catch (e) {
 
-    rawText = inputData.output[0].content[0].text || "No text found";  // if there is no word then this write no words can found in subject before the line
+    rawText = inputData.output[0].content[0].text || "No text found";  
 }
 
 const parts = rawText.split('\n\n');
